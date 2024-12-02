@@ -1,0 +1,359 @@
+puedes analisar este codigo 
+
+
+/* Card Container Styles 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Card Styles 
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 200px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+*/
+/* Details Page Styles */
+
+/* Tarjeta principal */
+.card {
+  position: relative;
+  width: 190px;
+  height: 280px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+/* Imagen de la tarjeta */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+/* Título del personaje */
+.heading {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Botón de Investigar */
+.investigate-button {
+  background-color: #b71c1c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  width: 100%;
+}
+
+.investigate-button:hover {
+  background-color: #ff0000;
+}
+
+.details-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.details-container img {
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.details-container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.details-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details-container ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer Styles (Optional) */
+footer {
+  background-color: #20232a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+h1, h2 {
+  text-align: center;
+  color: #20232a;
+}
+
+h2 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas */
+  gap: 20px; /* Espaciado entre tarjetas */
+  padding: 20px; /* Espaciado interno */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+/*--------------------------------charactersdetails---------------------------------*/
+/* Fondo de la página */
+.page-background {
+  background:  #212121;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: linear-gradient(to right, #1f1f1f, #b71c1c);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-wrapper img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.character-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff; 
+}
+
+.character-info p {
+  margin: 5px 0;
+  line-height: 1.6;
+  color: #ffffff; 
+}
+
+.character-info a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.character-info a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background:  #1E1E1E;
+  border: 1px solid #3d3d3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+  text-align: center;
+  color: #ffffff; /* Texto blanco */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.grid, .comics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  color: #ffffff; 
+}
+
+/* Tarjetas */
+.card, .comic-card {
+  background: linear-gradient(to bottom, #2b2b2b, #1f1f1f); /* Fondo oscuro degradado */
+  border: 1px solid #fefefe;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover, .comic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Resplandor sutil */
+}
+
+.comic-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #444;
+}
+
+.comic-card p {
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff; /* Texto blanco */
+}
+.saga-card {
+ background: linear-gradient(to bottom, #1a1a1a, #333333); /* Fondo degradado oscuro */
+  border: 5px solid transparent;
+  border-image: linear-gradient(90deg, #e81cff, #40c9ff, #fc00ff, #00dbde) 1;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  position: relative; /* Necesario para efectos de contenido */
+  overflow: hidden; /* Para que el contenido no salga de los bordes */
+
+  /* Sombra */
+  box-shadow: 0 4px 20px rgba(232, 28, 255, 0.3), /* Color 1 */
+              0 4px 30px rgba(64, 201, 255, 0.3), /* Color 2 */
+              0 4px 40px rgba(252, 0, 255, 0.3);  /* Color 3 */
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.saga-card:hover {
+  transform: scale(1.05) translateY(-10px); /* Zoom y movimiento hacia arriba */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5); /* Sombra brillante */
+}
+
+/* Imagen dentro de la tarjeta */
+.saga-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.saga-card:hover img {
+  transform: scale(1.1); /* Zoom suave en la imagen */
+}
+
+/* Título del personaje */
+.saga-card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+/* Botón de investigar */
+.saga-card-button {
+  background-color: #b71c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.saga-card-button:hover {
+  background-color: #ff0000;
+}
+.banner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo global para los títulos */
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+
+  /* Aplicación del degradado */
+  background: linear-gradient(90deg, #e81cff, #40c9ff, #fc00ff, #00dbde);
+  -webkit-background-clip: text; /* Hace que el degradado sea visible solo en el texto */
+  -webkit-text-fill-color: transparent; /* Hace que el fondo del texto sea transparente */
+  background-clip: text;
+  text-fill-color: transparent;
+
+  /* Estilos adicionales */
+  margin-top: 20px;
+}
